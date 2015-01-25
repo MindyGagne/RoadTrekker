@@ -7,7 +7,7 @@ module ApplicationHelper
 			nav_str += "<div class='navbar-header'>"
 
 				nav_str += "<button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar-collapse'>"
-					nav_str += "<span class='sr-only'>Toggle navigation</span>"
+					nav_str += "<span class='sr-only'>Toggle Navigation</span>"
 					nav_str += "<span class='icon-bar'></span>"
 					nav_str += "<span class='icon-bar'></span>"
 					nav_str += "<span class='icon-bar'></span>"
@@ -22,7 +22,7 @@ module ApplicationHelper
 				nav_str += "<ul class='nav navbar-nav'>"
 
 					nav_str += "<li>"
-						nav_str += link_to(raw("Blog<span class='sr-only'>(current)</span>"), page_blog_path, class: (action_name == "blog" ? "current" : ""))
+						nav_str += link_to(raw("Blog<span class='sr-only'></span>"), page_blog_path, class: (action_name == "blog" ? "current" : ""))
 					nav_str += "</li>"
 
 					nav_str += "<li>"
