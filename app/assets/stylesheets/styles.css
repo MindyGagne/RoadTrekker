@@ -9,37 +9,46 @@ h2 {font-size: 1.5em;
     font-family: "Helvetica Neue", "Arial", sans-serif;
 
 }
-.container {
-    height: 500%;
-}
+
 #main-map {
-    background: url(../assets/spokanemap.jpg) no-repeat;
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
     border: solid #000000 2px;
-    width: 100%;
     margin-top: 15px;
     margin-bottom: 5px;
     /*float: right;*/
 }
 
+#main-map iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden;
+}
+
 #directions {
-    margin-top: 15%;
+   margin-top: 5%;
 }
 
 li {
     list-style-type: none;
 }
 
-ul li {
+.navbar-nav > li:hover{
     background-color: #a4c6d0;
 }
 
 #main-nav button {
-    margin-left: 15px;
+/*    margin-left: 15px;
     height: 60px;
     width: 200px;
     background-color: #f2e9be;
     float: left;
-    border-radius: 8px;
+    border-radius: 8px;*/
 }
 
 .navbar-brand{
@@ -47,6 +56,8 @@ ul li {
     /*background-color: #a4c6d0;*/
 }
 #main-nav a{
-    float: left;
-    margin: 2%;
+}
+
+#main-footer{
+    padding-top: 5%;
 }
