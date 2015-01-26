@@ -7,9 +7,22 @@ a {
 }
 h2 {font-size: 1.5em;
     font-family: "Helvetica Neue", "Arial", sans-serif;
-
+}
+h3 {font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
+#user_options {
+    float: left;
+    width: 13%;
+    margin-left: 10px;
+    background-color: #c1e2b3;
+}
+
+#user_options ul {
+    padding: 0;
+}
 #main-map {
     position: relative;
     padding-bottom: 50%;
@@ -18,7 +31,7 @@ h2 {font-size: 1.5em;
     border: solid #000000 2px;
     margin-top: 15px;
     margin-bottom: 5px;
-    /*float: right;*/
+    float: right;
 }
 
 #main-map iframe{
@@ -32,6 +45,7 @@ h2 {font-size: 1.5em;
 
 #directions {
    margin-top: 5%;
+    float: right;
 }
 
 li {

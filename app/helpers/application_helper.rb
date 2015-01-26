@@ -53,6 +53,20 @@ module ApplicationHelper
 		return nav_str.html_safe
 	end
 
+	def user_options
+		options_str = "<div id='user_options' class='col-lg-2'>"
+		  options_str += "<h3>I want to see:</h3>"
+      options_str += "<ul>"
+        options_str += "<li>Map</li>"
+        options_str += "<li>Gas Prices</li>"
+        options_str += "<li>Construction Reports</li>"
+        options_str += "<li>Weather</li>"
+      options_str +="</ul>"
+		options_str += "</div>"
+
+		return options_str.html_safe
+	end
+
 	def main_footer
 		footer_str = "<footer id='main-footer' class='container text-center'>"
 			footer_str += "<div class='copyright'>"
