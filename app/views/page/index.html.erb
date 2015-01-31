@@ -1,3 +1,4 @@
+
 <div class="main-content">
 
   <div class="container">
@@ -6,23 +7,44 @@
       <div id="directions" class="col-lg-10">
         <form class="form-inline">
           <div class="form-group">
-            <label for="starting-location">From:</label>
-            <input type="text" id="starting-location" class="form-control" placeholder="starting location">
+            <label for="starting-location">From City:</label>
+            <input type="text" id="start" class="form-control" placeholder="starting location">
+            <label for="starting-location">State:</label>
+            <input type="text" id="start_state" class="form-control" placeholder="state">
           </div>
 
           <div class="form-group">
-            <label for="destination">To:</label>
-            <input type="text" id="destination" class="form-control" placeholder="destination">
+            <label for="destination">To City:</label>
+            <input type="text" id="end" class="form-control" placeholder="destination">
+            <label for="destination">State:</label>
+            <input type="text" id="end_state" class="form-control" placeholder="state">
+          </div>
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" id="submit">Submit</button>
           </div>
         </form>
       </div>
 
-      <div id="main-map" class="col-lg-10">
-          <iframe onchange="" width="800" height="420" frameborder="0" style="border:0" src="https://www.google
-+        .com/maps/embed/v1/directions?origin=Spokane%2C%20WA%2C%20United%20States&destination=Phoenix%2C%20AZ%2C%20United%20States&key=AIzaSyD-dLh3Bbh0_NbTfwUKoRuem-9vbXUbfSA"></iframe>
+      <div>
+      Latitude: <span id="lat"></span><br/>
+      Longitude: <span id="lng"></span><br/>
+      <!--URL: <span id="url"></span><br/>-->
+      Direction: <span id="urldir"></span>
+
       </div>
 
+      <br/>
+      <div id="map-container" class="col-lg-10">
+
+          <div id="map-canvas" class="directions"></div>
+
+      </div>
+
+        <!--<iframe onchange="" width="800" height="420" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=Spokane%2C%20WA%2C%20United%20States&destination=Phoenix%2C%20AZ%2C%20United%20States&key=AIzaSyD-dLh3Bbh0_NbTfwUKoRuem-9vbXUbfSA"></iframe>-->
+      <!--</div>-->
+
     </div>
+
 
     <div class="row">
       <div id="fuel-summary" class="col-lg-12">
