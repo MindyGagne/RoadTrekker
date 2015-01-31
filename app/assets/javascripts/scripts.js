@@ -20,14 +20,18 @@
     });
 
 $(document).ready(function () {
-$('#submit').click (function () {
+    $('#submit').click (function () {
+        //variables to store the start and destination locations
         var daddr = $("#end").val();
         var saddr = $("#start").val();
         var daddr_state = $("#end_state").val();
         var saddr_state = $("#start_state").val();
-        $("#lat").text("test" + daddr);
+
+        // these just show what's in the variables in the top left of index page
+        $("#lat").text(daddr);
         $("#lng").text(saddr);
 
+        //these are different way I have tried to get the map from google
     var urlDirection = "http://maps.google.com/maps?daddr=' + daddr + '&saddr=' + saddr + "
     $("#urldir").html(urlDirection);
 
