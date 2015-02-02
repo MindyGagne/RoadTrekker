@@ -37,9 +37,13 @@ module ApplicationHelper
 			# End main nav links
 
 			# right side login link
-				nav_str += "<ul id='nav-login' class='nav navbar-nav pull-right'>"
-					nav_str += "<li id='nav-login-button'>" + link_to("Login") +"</li>"
-				nav_str += "</ul>"
+		nav_str += "<ul id='nav-login' class='nav navbar-nav pull-right'>"
+		if user_signed_in?
+			nav_str += "<li>" + link_to("Logout", destroy_user_session_path, :method => "delete") + "</li>"
+		else
+			nav_str += "<li>" + link_to("Login", new_user_session_path) + "</li>"
+		end
+		nav_str += "</ul>"
 			# end login link
 
 			nav_str += "</div>"
