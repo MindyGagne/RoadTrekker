@@ -1,4 +1,4 @@
-
+//This One
 navigator.geolocation.getCurrentPosition(function (pos) {
     var lat = pos.coords.latitude;
     var lng = pos.coords.longitude;
@@ -20,7 +20,7 @@ navigator.geolocation.getCurrentPosition(function (pos) {
 });
 
 $(document).ready(function () {
-    
+
     $('#submit').click(function () {
         //variables to store the start and destination locations
         var daddr = $("#end").val();
